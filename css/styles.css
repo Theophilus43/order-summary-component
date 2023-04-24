@@ -1,0 +1,132 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --purple-blue: hsl(245, 70%, 71%);
+    
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: var(--Pale-blue);
+    min-height: 100vh;
+}
+
+.container{
+    margin: 3em 1.5em 2em 1.5em;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    max-width: 500px; 
+}
+
+
+.color{
+   background-color: white;
+    max-width: 100%;
+    margin-top: 0;
+    border-radius: 0 0 18px 18px; 
+    
+}
+
+.big-image{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 18px 18px 0 0;
+}
+
+h1{
+    margin: 1.5em auto 0.8em auto;
+    font-weight: 900;
+    font-size: 29px;
+    color: var(--Dark-blue);
+}
+
+h3{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 16px;
+}
+
+p{
+    margin-bottom: 2em;
+    line-height: 1.6em;
+    padding: 0 2.8em;
+    color: var(--Desaturated-blue);
+}
+
+.annual{
+    display: flex;
+    margin: 1.5em;
+    background-color: var(--Very-pale-blue);
+    padding: 1em 1.3em;
+    border-radius: 13px;
+} 
+.year{
+    line-height: 1.6em;
+    margin: 0 2em 0 1em;
+    text-align: left;
+}
+
+.last{
+    margin: 1.8em auto 2em auto;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.link{
+    padding-top: 1em;
+    width: 20px;
+    margin: 0 2em 0 auto;
+}
+
+.button{
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var( --Bright-blue);
+    padding: 1.5em 5em;
+    font-weight: 700;
+    font-size: 0.925rem;
+    color: white;
+    width: 89%;
+}
+
+
+
+.button:is(:hover, :focus) {
+   background-color: var(--purple-blue); 
+}
+
+a:hover,
+a:focus {
+    color: var(--purple-blue);
+    text-decoration: none;
+}
+
+.last:hover,
+.last:focus {
+    color: var(--Dark-blue);
+}
+
+
+@media (min-width: 494px){
+    .container{
+        margin: 5em auto;
+        width: 100%;
+    }
+}
